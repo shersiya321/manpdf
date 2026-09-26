@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#222222">
+
+    <ImageView android:id="@+id/pdfImage" android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scaleType="fitCenter" android:background="#FFFFFF"/>
+
+    <com.example.pdfteachingrecorder.AnnotationView android:id="@+id/annotations"
+        android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+    <LinearLayout android:id="@+id/toolbar" android:layout_width="64dp" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="3dp" android:background="#DD202020">
+        <Button android:id="@+id/openPdf" android:text="PDF" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/pen" android:text="✎" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/highlight" android:text="H" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/erase" android:text="⌫" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/undo" android:text="↶" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/clear" android:text="C" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <Button android:id="@+id/position" android:text="↔" android:minWidth="0dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="48dp"
+        android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:background="#CC222222">
+        <Button android:id="@+id/prev" android:text="‹" android:layout_width="60dp" android:layout_height="48dp"/>
+        <TextView android:id="@+id/pageLabel" android:text="0/0" android:textColor="#FFFFFF"
+            android:gravity="center" android:layout_width="70dp" android:layout_height="48dp"/>
+        <Button android:id="@+id/next" android:text="›" android:layout_width="60dp" android:layout_height="48dp"/>
+    </LinearLayout>
+</FrameLayout>
